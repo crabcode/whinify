@@ -1,6 +1,6 @@
-# Whinify
-
 ![Whinify in action](https://github.com/crabcode/whinify/blob/main/whinify.gif)
+
+# Whinify
 
 Simple, automated complainy-case for your website!
 
