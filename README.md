@@ -10,7 +10,7 @@ It's easy! Just download the `whinify.js` script and include it like so:
 
 ```<script src="path_to_file/whinify.js" defer></script>```
 
-Aaaand you're done!
+That's it, the script will take care of the rest!
 
 ## Customization
 
