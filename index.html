@@ -3,7 +3,10 @@
 	<head>
 		<title>Whinify Example</title>
 		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+			@font-face {
+				font-family: 'Inter';
+				src: url('inter.ttf') format('truetype');
+			}
 			:root {
 				--text: #000000;
 				--background: #ffffff;
@@ -15,7 +18,7 @@
 				background-color: var(--secondary-button);
 				color: var(--text);
 				margin: 20px auto;
-				font-family: 'Inter', sans;
+				font-family: 'Inter', sans-serif;
 				max-width: 600px;
 			}
 			h1 {
