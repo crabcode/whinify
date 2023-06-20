@@ -1,5 +1,7 @@
 # Whinify
 
+![Whinify in action](https://github.com/crabcode/whinify/blob/main/whinify.gif)
+
 Simple, automated complainy-case for your website!
 
 ## Installation
@@ -19,12 +21,8 @@ If you want to add, remove, or target specific element IDs and classes, you can 
 ```
 targets = [
     'input[type=text]',
-	'textarea',
-	'#elementID',
-	'.myClass'
+    'textarea',
+    '#elementID',
+    '.myClass'
 ];
 ```
-
-## Example
-
-![Whinify in action](https://github.com/crabcode/whinify/blob/main/whinify.gif)
