@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Whinify Live Demo</title>
+		<style>
+			@font-face {
+				font-family: 'Inter';
+				src: url('inter.ttf') format('truetype');
+			}
+			:root {
+				--text: #000000;
+				--background: #ffffff;
+				--primary-button: #35394b;
+				--secondary-button: #f4f3f7;
+				--accent: #514653;
+			}
+			body {
+				background-color: var(--secondary-button);
+				color: var(--text);
+				margin: 20px auto;
+				font-family: 'Inter', sans-serif;
+				max-width: 600px;
+			}
+			h1 {
+				font-size: 400%;
+				margin-bottom: 30px;
+			}
+			label, input, textarea {
+				display:block;
+				margin: 10px 0;
+				font-family: inherit;
+				font-size: inherit;
+			}
+			textarea {
+				width: 100%;
+				min-height: 150px;
+				margin-top: 20px;
+				box-sizing: border-box;
+			}
+			p {
+				font-size: 125%;
+				margin-bottom: 30px;
+			}
+			#submit {
+				border: none;
+				border-radius: 5px;
+				padding: 8px 12px;
+				background-color: var(--primary-button);
+				color: var(--background);
+				float: right;
+				margin: 5px 0;
+				font-size: 125%;
+			}
+			#submit:hover {
+				background-color: var(--accent);
+			}
+		</style>
+	</head>
+	
+	<body>
+		<script src="../whinify.min.js" defer></script>
+	
+		<h1>Whinify</h1>
+		<p>Automated whining! Download from <a href="https://github.com/crabcode/whinify" target="_blank">Github</a>!</p>
+		<hr>
+		<h2>Comments</h2>
+		<label for="name">Name: <input type="text" id="name"/></label>
+		<textarea></textarea>
+		<input type="button" id="submit" value="Submit" onclick="javascript:document.querySelectorAll('input[type=text], textarea').forEach(element => element.value = '');"/>
+	</body>
+</html>
