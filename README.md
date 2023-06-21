@@ -16,7 +16,7 @@ That's it, the script will take care of the rest!
 
 By default, the script attaches itself to all `<textarea>` and `<input type="text">` elements it finds in your page.
 
-If you want to add, remove, or target specific element IDs and classes, you can do so by changing the `target` array in the `whinify.js` file:
+If you want to add, remove, or target specific elements, IDs and classes, you can do so by changing the `target` array in the `whinify.js` file:
 
 ```
 targets = [
