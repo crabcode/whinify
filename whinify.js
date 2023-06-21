@@ -1,18 +1,18 @@
 targets = [
-	'input[type="text"]',
+	'input[type=text]',
 	'textarea'
 ];
 
 function whinify(element, event)
 {
-	const key = event.key;
+	const key = event.data;
 	
-	if (/^[a-zA-Z]$/.test(key) && !event.ctrlKey)
+	if (/^[a-zA-Z]$/.test(key))
 	{
 		event.preventDefault();
 		
 		const value = element.value;
-		const start = element.selectionStart;
+		const start = element.selectionStart - 1;
 		const end = element.selectionEnd;
 		
 		let modKey = start % 2 == 1 ? key.toUpperCase() : key.toLowerCase();
@@ -22,4 +22,4 @@ function whinify(element, event)
 	}
 }
 
-window.onload = () => document.querySelectorAll(targets.join(",")).forEach(element => element.addEventListener("keydown", event => whinify(element, event)));
+window.onload = () => document.querySelectorAll(targets.join(",")).forEach(element => element.addEventListener("input", event => whinify(element, event)));

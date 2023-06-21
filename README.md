@@ -22,7 +22,7 @@ If you want to add, remove, or target specific element IDs and classes, you can 
 targets = [
     'input[type=text]',
     'textarea',
-    '#elementID',
+    '#myID',
     '.myClass'
 ];
 ```
